@@ -1,0 +1,101 @@
+id,text
+1,"Natural language processing helps computers understand, analyze, and generate human language."
+2,"Tokenization splits text into smaller units such as words, subwords, or sentences."
+3,Lowercasing text can reduce noise when case does not carry important meaning.
+4,"Stopword removal can simplify text, but it should be used carefully in tasks like sentiment or toxicity detection."
+5,"Stemming reduces words to rough roots, while lemmatization uses dictionary forms."
+6,Lemmatization often keeps words more readable than stemming.
+7,Punctuation may carry meaning in tasks such as sarcasm detection or chat moderation.
+8,Text normalization makes messy text easier to process before modeling.
+9,A bag of words representation counts word presence without considering order.
+10,TF-IDF gives higher importance to words that are frequent in a document but rare across the corpus.
+11,TF-IDF is a strong baseline for many text classification tasks.
+12,Sparse vectors from TF-IDF can work very well with linear models.
+13,Logistic regression predicts the probability of a class using a sigmoid function.
+14,Linear SVM finds a separating boundary that can work well for high-dimensional text data.
+15,Precision tells you how often predicted positives are actually correct.
+16,Recall tells you how many actual positives your model successfully found.
+17,F1 score balances precision and recall into one useful metric.
+18,Accuracy can be misleading when the dataset is imbalanced.
+19,"Class imbalance is common in toxicity, spam, and fraud detection datasets."
+20,"A confusion matrix shows true positives, false positives, true negatives, and false negatives."
+21,Error analysis helps you understand where a model fails and why.
+22,Saying a model is good is not enough; you should inspect its mistakes.
+23,N-grams capture short word sequences and help preserve local context.
+24,Character n-grams can help in noisy text with spelling variations.
+25,Subword tokenization helps modern transformer models handle rare words.
+26,Word embeddings represent words as dense vectors that capture meaning.
+27,Word2Vec learns embeddings from surrounding context.
+28,GloVe learns word vectors from global co-occurrence statistics.
+29,"FastText represents words using character n-grams, which helps with rare words and morphology."
+30,"Classic word embeddings are useful, but they do not fully capture sentence meaning by themselves."
+31,Context matters because the same word can mean different things in different sentences.
+32,BERT reads both left and right context to build contextual embeddings.
+33,BERT is strong for understanding text rather than directly generating it.
+34,Sentence-BERT adapts BERT for sentence similarity and semantic search.
+35,Sentence embeddings turn whole sentences into vectors that reflect meaning.
+36,MiniLM is a lightweight transformer model that produces efficient sentence embeddings.
+37,"MiniLM is popular because it is fast, compact, and effective for retrieval tasks."
+38,Semantic search retrieves text based on meaning rather than exact word overlap.
+39,Cosine similarity measures how close two vectors are in direction.
+40,High cosine similarity usually means two texts are semantically related.
+41,A query about Ronaldo should retrieve football-related documents even if the exact word football is not present.
+42,Embedding models can connect concepts that share meaning without sharing the same words.
+43,This is why semantic search feels smarter than keyword search.
+44,RAG stands for Retrieval-Augmented Generation.
+45,RAG combines retrieval of relevant documents with generation of a final answer.
+46,A retriever finds useful chunks before the language model writes the response.
+47,RAG helps reduce hallucination by grounding answers in source documents.
+48,A vector database stores embeddings so similar items can be found quickly.
+49,FAISS is a fast similarity search library for vectors.
+50,"ChromaDB is a convenient vector store that can save embeddings, text, and metadata."
+51,"FAISS is great for fast vector search, while ChromaDB is easier for end-to-end RAG workflows."
+52,Metadata helps you track where a retrieved chunk came from.
+53,Chunking splits long documents into smaller pieces that are easier to embed and retrieve.
+54,Chunk overlap helps preserve context across neighboring text segments.
+55,PDF loading converts document files into readable text for downstream NLP pipelines.
+56,"Legal, academic, and technical PDFs are common sources for RAG systems."
+57,A good chunk should be small enough to retrieve precisely but large enough to keep meaning.
+58,Pretrained models save time because they already learned useful language patterns.
+59,Fine-tuning adapts a pretrained model to your specific task or domain.
+60,Prompting can guide a large language model without changing its weights.
+61,Zero-shot prompting asks a model to solve a task without task-specific training.
+62,Few-shot prompting gives the model a few examples before the actual input.
+63,Instruction tuning teaches models to follow human-style directions more reliably.
+64,"Large language models can generate fluent answers, summarize text, and transform style."
+65,An LLM is not just a text generator; it is also a pattern learner and reasoning helper.
+66,T5 treats almost every NLP task as a text-to-text problem.
+67,FLAN-T5 is a more instruction-following version of T5.
+68,"FLAN-T5 can be used for question answering, summarization, translation, and generation."
+69,LLM-based systems become stronger when they receive relevant retrieved context.
+70,"A retrieval chain connects query understanding, document search, and response generation."
+71,"LangChain helps wire together components like loaders, splitters, retrievers, and LLMs."
+72,LangChain reduces boilerplate when building retrieval-based applications.
+73,A document loader reads raw files and prepares them for processing.
+74,A text splitter breaks long input into manageable chunks.
+75,An embedding function converts text into vectors.
+76,A retriever returns the most relevant chunks for a query.
+77,A generation model turns retrieved evidence into a natural answer.
+78,A well-designed RAG system should be both accurate and explainable.
+79,Response quality improves when retrieval is precise and the source context is trustworthy.
+80,"Evaluation for RAG should consider answer relevance, faithfulness, context precision, and context recall."
+81,Faithfulness checks whether the answer stays grounded in the retrieved context.
+82,Answer relevance checks whether the response actually addresses the user question.
+83,Context recall checks whether important supporting information was retrieved.
+84,Context precision checks whether the retrieved context was useful rather than noisy.
+85,RAGAS provides metrics for evaluating RAG systems.
+86,"Good evaluation helps you see whether the problem is retrieval, generation, or both."
+87,A semantic search engine is a great beginner project for learning modern NLP.
+88,A toxicity classifier is a strong classical NLP project for learning text features and evaluation.
+89,Comparing Logistic Regression and SVM teaches you how model choice affects results.
+90,Embedding-based retrieval is a natural next step after classical text classification.
+91,A personal knowledge base can turn your notes into a searchable assistant.
+92,A domain-specific chatbot works best when its knowledge comes from trusted documents.
+93,The best NLP projects often combine simple components in a clever way.
+94,You do not always need to train a model from scratch to build something useful.
+95,Using pretrained models can help you focus on the application instead of the heavy training.
+96,"Modern NLP is often about building systems, not just building models."
+97,Retrieval is the memory layer of many AI assistants.
+98,Generation is the writing layer of many AI assistants.
+99,Semantic similarity is the bridge between text understanding and retrieval.
+100,RAG is powerful because it lets the model search first and answer second.
